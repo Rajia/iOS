@@ -37,35 +37,22 @@
  */
 
 //
-// MotionTests.m
-// MotionTests
+//  PageContentViewController.h
+//  DiceRoller
 //
-// Created by Mike Stowell on 9/9/14.
+//  Created by Rajia  on 1/20/15.
+//  Copyright (c) 2015 iSENSE. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <UIKit/UIKit.h>
 
-@interface MotionTests : XCTestCase
+@interface PageContentViewController : UIViewController
 
-@end
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg;
+@property (weak, nonatomic) IBOutlet UILabel *titleTxt;
 
-@implementation MotionTests
-
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
+@property NSUInteger pageIndex;
+@property NSString *titleLabel;
+@property NSString *imageFile;
 
 @end
